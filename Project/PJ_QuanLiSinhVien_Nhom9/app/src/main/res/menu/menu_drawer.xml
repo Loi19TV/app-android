@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mnStartScreen"
+        android:title="Màn hình chính"
+        android:icon="@drawable/image_screen_start_24"/>
+    <item
+        android:id="@+id/mnKhoa"
+        android:title="Khoa"
+        android:icon="@drawable/image_khoa_24"/>
+    <item
+        android:id="@+id/mnSinhVien"
+        android:title="Sinh Viên"
+        android:icon="@drawable/image_sinhvien_24"/>
+    <item
+        android:id="@+id/mnDiem"
+        android:title="Điểm"
+        android:icon="@drawable/image_diem_24"/>
+    <item
+        android:id="@+id/mnCaiDat"
+        android:title="Cài đặt"
+        android:icon="@drawable/image_settings_24"/>
+</menu>

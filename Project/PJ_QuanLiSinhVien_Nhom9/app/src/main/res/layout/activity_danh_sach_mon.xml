@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChoseDepartmentActivity">
+
+    <!-- Nhập tên môn-->
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Nhập tên môn"/>
+
+    <EditText
+        android:id="@+id/edtNhapTenMon"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:paddingLeft="30dp"
+        android:background="@drawable/edittext_search"/>
+
+    <!-- Nhập số tín chỉ -->
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Nhập số tín chỉ"/>
+
+    <EditText
+        android:id="@+id/edtNhapSoTinChi"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:paddingLeft="30dp"
+        android:background="@drawable/edittext_search"/>
+
+    <TextView
+        android:id="@+id/txtDanhSachMon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Danh sách môn" />
+
+    <!--Thêm, xóa, sửa-->
+    <ListView
+        android:id="@+id/lvDanhSachMon"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_search"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnThem"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:background="@drawable/button_background"
+            app:backgroundTint="@null"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/btnXoa"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:background="@drawable/button_background"
+            app:backgroundTint="@null"
+            android:text="Xóa" />
+        <Button
+            android:id="@+id/btnSua"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:background="@drawable/button_background"
+            app:backgroundTint="@null"
+            android:text="Sửa" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnSapXep"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:background="@drawable/button_background"
+            app:backgroundTint="@null"
+            android:text="Sắp xếp" />
+        <TextView
+            android:id="@+id/tvTongSoMon"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:textSize="20dp"
+            android:text="Tổng số môn: "/>
+    </LinearLayout>
+
+</LinearLayout>
